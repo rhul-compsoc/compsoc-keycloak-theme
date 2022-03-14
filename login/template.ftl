@@ -166,6 +166,32 @@
                                 </div>
                                 <div class="card-footer">
                                     Cloud Services are provided by the Royal Holloway, Computing Society
+
+                                    <#if realm.internationalizationEnabled  && locale.supported?size gt 1>
+                                        <hr />
+
+                                        <div class="${properties.kcLocaleMainClass!}" id="kc-locale">
+                                            <div id="kc-locale-wrapper" class="${properties.kcLocaleWrapperClass!}">
+                                                <div id="kc-locale-dropdown" class="${properties.kcLocaleDropDownClass!}">
+                                                    <button
+                                                        id="compsoc-language-dropdown"
+                                                        type="button"
+                                                        data-bs-toggle="dropdown"
+                                                        aria-expanded="false"
+                                                        class="${properties.kcButtonClass!} ${properties.kcButtonSecondaryClass!} dropdown-toggle" id="kc-current-locale-link">
+                                                            ${locale.current}
+                                                        </button>
+                                                    <ul class="${properties.kcLocaleListClass!}" aria-labelledby="compsoc-language-dropdown">
+                                                        <#list locale.supported as l>
+                                                            <li class="${properties.kcLocaleListItemClass!}">
+                                                                <a class="${properties.kcLocaleItemClass!}" href="${l.url}">${l.label}</a>
+                                                            </li>
+                                                        </#list>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </#if>
                                 </div>
                             </div>
                         </div>
