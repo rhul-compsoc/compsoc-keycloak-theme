@@ -165,7 +165,7 @@
                                     </div>
                                 </div>
                                 <div class="card-footer">
-                                    Cloud Services are provided by the Royal Holloway, Computing Society
+                                    ${msg("compsoc-card-footer")}
 
                                     <#if realm.internationalizationEnabled  && locale.supported?size gt 1>
                                         <hr />
