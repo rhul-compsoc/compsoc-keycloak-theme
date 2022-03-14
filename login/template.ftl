@@ -45,8 +45,8 @@
             <header>
                 <nav class="navbar navbar-expand-lg navbar-light bg-compsoc sticky-top fixed-top">
                     <div class="container">
-                        <a aria-current="page" class="navbar-brand" target="_blank" href=${url.resourcesPath}/img/vertical_padding_light.svg">
-                            <img class="d-inline-block align-top" alt="Computing Society" src="https://raw.githubusercontent.com/rhul-compsoc/branding/master/logos/vertical_padding_light.svg" width="120" height="30">
+                        <a aria-current="page" class="navbar-brand" target="_blank" href="https://computingsociety.co.uk/">
+                            <img class="d-inline-block align-top" alt="Computing Society" src="${url.resourcesPath}/img/vertical_padding_light.svg" width="120" height="30">
                         </a>
                     </div>
                 </nav>
