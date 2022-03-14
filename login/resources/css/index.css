@@ -1,0 +1,25 @@
+.compsoc-document {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  box-shadow: 0 10px 15px -1px rgba(0,0,0,.22);
+}
+
+.footer {
+  padding: 1rem;
+  background-color: black;
+}
+
+.footer-text {
+  text-align: center;
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
