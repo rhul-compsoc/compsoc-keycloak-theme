@@ -52,7 +52,7 @@
                 "
               >
                 <span style="font-family: 'Arial', sans-serif; color: white"
-                  ><#nested "reason"></span
+                  ><#nested "footer"></span
                 >
               </p>
             </td>
@@ -64,10 +64,11 @@
                 background: #1a1e21;
                 padding: 14.2pt 14.2pt 14.2pt 14.2pt;
                 height: 1.05pt;
+                text-align: center;
               "
             >
               <p class="MsoNormal" style="margin-top: 0cm; line-height: normal">
-                <span style="font-family: 'Arial', sans-serif; color: white"
+                <span style="font-family: 'Arial', sans-serif; color: white;"
                   >made with ❤ in egham</span
                 >
               </p>
