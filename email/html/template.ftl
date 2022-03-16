@@ -33,7 +33,20 @@
               valign="top"
               style="background: white; padding: 14.2pt 14.2pt 14.2pt 14.2pt"
             >
-              <#nested "text">
+              <p
+                class="MsoNormal"
+                style="
+                  mso-margin-top-alt: 0cm;
+                  margin-right: 0cm;
+                  margin-bottom: 12pt;
+                  margin-left: 0cm;
+                  line-height: normal;
+                "
+              >
+                <span style="font-family: 'Arial', sans-serif; color: black"
+                  ><#nested "text"></span
+                >
+              </p>
             </td>
           </tr>
           <tr>
