@@ -57,7 +57,7 @@
                     <div class="row justify-content-center">
                         <div class="col-12 col-sm-10 col-md-8">
                             <div class="card my-5">
-                                <div class="card-header fs-4">
+                                <div class="card-header">
                                     <div class="${properties.kcFormCardClass!}">
                                         <header class="${properties.kcFormHeaderClass!}">
                                             <#if !(auth?has_content && auth.showUsername() && !auth.showResetCredentials())>
@@ -67,11 +67,11 @@
                                                             <span class="subtitle"><span class="required">*</span> ${msg("requiredFields")}</span>
                                                         </div>
                                                         <div class="col-md-10">
-                                                            <span id="kc-page-title"><#nested "header"></span>
+                                                            <span id="kc-page-title" class="fs-4"><#nested "header"></span>
                                                         </div>
                                                     </div>
                                                 <#else>
-                                                    <span id="kc-page-title"><#nested "header"></span>
+                                                    <span id="kc-page-title" class="fs-4"><#nested "header"></span>
                                                 </#if>
                                             <#else>
                                                 <#if displayRequiredFields>
@@ -105,6 +105,7 @@
                                                     </div>
                                                 </#if>
                                             </#if>
+                                            <p class="text-muted m-0">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</p>
                                         </header>
                                     </div>
                                 </div>
